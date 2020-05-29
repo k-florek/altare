@@ -20,3 +20,6 @@ npm-debug.log
 
 ### IDE ###
 .vscode/*
+
+### Desktop ###
+auspice-desktop*/

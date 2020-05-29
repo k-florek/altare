@@ -3,13 +3,12 @@
 [![NPM version](https://img.shields.io/npm/v/auspice.svg?style=flat)](https://www.npmjs.com/package/auspice)
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 
-## About Nextstrain
+## About Altare
 
-**Nextstrain** is an open-source project to harness the scientific and public health potential of pathogen genome data.
-We provide a continually-updated view of publicly available data with powerful analytics and visualizations showing pathogen evolution and epidemic spread.
-Our goal is to aid epidemiological understanding and improve outbreak response.
+*Definition: Flat-topped structure used for divination.*
 
-Resulting data and inferences are available live at the website [nextstrain.org](https://nextstrain.org).
+**Altare** is simply an extension of Auspice to allow for visualizing phylogenomic data with out using a web server.
+It may be used in tandem with nextstrain's bioinformatics toolkit [augur](https://github.com/nextstrain/augur) or on its own.
 
 ## About Auspice
 
@@ -18,6 +17,14 @@ Resulting data and inferences are available live at the website [nextstrain.org]
 **Auspice** is an open-source interactive web app for visualizing phylogenomic data.
 It may be used in tandem with nextstrain's bioinformatics toolkit [augur](https://github.com/nextstrain/augur) or on its own.
 Auspice may be used to explore datasets locally or run as a server to share results.
+
+## About Nextstrain
+
+**Nextstrain** is an open-source project to harness the scientific and public health potential of pathogen genome data.
+We provide a continually-updated view of publicly available data with powerful analytics and visualizations showing pathogen evolution and epidemic spread.
+Our goal is to aid epidemiological understanding and improve outbreak response.
+
+Resulting data and inferences are available live at the website [nextstrain.org](https://nextstrain.org).
 
 ## Documentation
 
@@ -29,34 +36,7 @@ The following are helpful when beginning to use Auspice:
 
 ## Quickstart
 
-### Installation
-
-Install auspice for use as a global command.
-This requires nodejs 10+. We recommend using a conda environment, but this is not the only way.
-(See [here](https://nextstrain.github.io/auspice/introduction/install) for more installation methods & help).
-
-#### Install with conda (Recommended)
-
-Create and activate a [conda](https://docs.conda.io) environment:
-
-```bash
-conda create --name auspice nodejs=10
-conda activate auspice
-```
-
-Now that the conda environment is activated, install auspice:
-
-```bash
-npm install --global auspice
-```
-
-#### Install from source
-
-```bash
-git clone https://github.com/nextstrain/auspice.git
-cd auspice
-npm install --global .
-```
+Download the package release for your operating system and run it as needed.
 
 ### Obtain datasets to display
 
@@ -79,24 +59,6 @@ If you've installed auspice from source, we have helper scripts to make all the 
 npm run get-data
 npm run get-narratives
 ```
-
-### Run auspice
-
-```bash
-auspice view --datasetDir data
-```
-
-And view auspice in the browser at [localhost:4000](http://localhost:4000)
-
-If you are editing source code, running the following command will allow hot-reloading.
-
-```bash
-auspice develop --datasetDir data
-```
-
-### CLI (Command Line Interface)
-
-Run `auspice --help` or `auspice view --help` to see all the available command line options.
 
 ## Contributor Information
 
