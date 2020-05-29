@@ -13,13 +13,14 @@
   "bin": {
     "auspice": "./auspice.js"
   },
-  "main": "electronApp.js",
+  "main": "index.js",
   "scripts": {
     "create-data-dir": "env bash ./scripts/create-data-dir.sh",
     "postinstall": "npm run create-data-dir",
     "view": "node auspice.js view --verbose",
     "dev": "node auspice.js develop --verbose",
-    "start": "electron .",
+    "start": "npm run view",
+    "start-electron":"electron electronApp.js .",
     "server": "npm run view",
     "build": "node auspice.js build --verbose",
     "prepare": "npm run build",
@@ -36,7 +37,10 @@
     "integration-test:ci": "start-server-and-test server http://localhost:4000 integration-test",
     "smoke-test": "NODE_ENV=test ENV=dev jest ./test/smoke-test/urls.test.js --config puppeteer.config.js",
     "smoke-test:ci": "start-server-and-test server http://localhost:4000 smoke-test",
-    "diff-lang": "./scripts/diff-lang.js"
+    "diff-lang": "./scripts/diff-lang.js",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=favicon.png --prune=true --out=release-builds",
+    "package-win": "electron-packager . auspice-desktop --overwrite --asar --platform=win32 --arch=ia32 --icon=favicon.png --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"auspice-desktop\"",
+    "package-linux": "electron-packager . auspice-desktop --overwrite --asar --platform=linux --arch=x64 --icon=favicon.png --prune=true --out=release-builds"
   },
   "dependencies": {
     "@babel/core": "^7.3.4",
