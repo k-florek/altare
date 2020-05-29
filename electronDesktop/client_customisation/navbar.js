@@ -7,6 +7,7 @@ const NavBarContainer = styled.div`
   align-items: center;
   justify-content: center;
   height: 100%;
+  theme: "sidebarTheme";
 `;
 
 const Title = styled.a`
@@ -25,7 +26,7 @@ const AuspiceNavBar = ({narrativeTitle, sidebar}) => {
   return (
     <NavBarContainer>
       <Title href="/">
-        {"auspice.us"}
+        {"altare"}
       </Title>
     </NavBarContainer>
   );

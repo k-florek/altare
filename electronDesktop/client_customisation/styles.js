@@ -2,6 +2,7 @@ import React from "react"; // eslint-disable-line
 import styled from 'styled-components';
 import { version } from "../../package.json";
 const logoPNG = require("./nextstrain-logo-small.png");
+const staphbPNG = require("./staphb-logo-small.png");
 const gitHubLogo = require("./GitHub-Mark-32px.png");
 
 
@@ -52,10 +53,16 @@ export const NextstrainTitle = () => (
   </a>
 );
 
+export const StaphB = () => (
+  <a style={{textDecoration: "none", fontSize: 18}} href="http://www.staphb.org">
+    <img alt="staphb logo" width="60px" src={staphbPNG}/>
+    <span style={{fontWeight: 400, fontSize: "16px"}}>{"Built for StaPH-B"}</span>
+  </a>
+);
 
 export const GitHub = () => (
-  <a style={{textDecoration: "none", fontSize: 18}} href="https://github.com/nextstrain/auspice.us">
+  <a style={{textDecoration: "none", fontSize: 18}} href="https://github.com/k-florek/altare">
     <img alt="github logo" width="25px" src={gitHubLogo}/>
-    <span style={{fontWeight: 400, fontSize: "16px"}}>{" /nextstrain/auspice.us"}</span>
+    <span style={{fontWeight: 400, fontSize: "16px"}}>{" /k-florek/altare"}</span>
   </a>
 );

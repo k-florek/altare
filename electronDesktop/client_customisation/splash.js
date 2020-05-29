@@ -1,8 +1,7 @@
 import React from "react"; // eslint-disable-line
 import { handleDroppedFiles } from "./handleDroppedFiles";
-import { P, Title, NextstrainTitle, CenterContent, Line, GitHub } from './styles';
+import { P, Title, NextstrainTitle, CenterContent, Line, GitHub, StaphB } from './styles';
 import { version } from "../../package.json";
-
 
 class SplashContent extends React.Component {
   constructor(props) {
@@ -30,11 +29,9 @@ class SplashContent extends React.Component {
       <div className="static container">
 
         <CenterContent>
-          <Title>auspice.us</Title>
+          <Title>altare</Title>
           <P>
-            {`auspice.us allows interactive exploration of phylogenomic datasets by simply dragging & dropping them onto this page.`}
-            <br/>
-            {`No server is required and no data leaves your browser.`}
+            {`altare allows interactive exploration of phylogenomic datasets using auspice by simply dragging & dropping them here.`}
           </P>
         </CenterContent>
 
@@ -47,22 +44,21 @@ class SplashContent extends React.Component {
 
         <CenterContent>
           <P>
-            {`auspice.us is part of Nextstrain, an open-source project to harness the scientific and public health potential of pathogen genome data. `}
+            {`altare is built from Nextstrain, an open-source project to harness the scientific and public health potential of pathogen genome data. `}
             {`For more information about how to run the bioinformatics tools which this tool can visualise please see `}
             <a href="https://nextstrain.org/docs/bioinformatics/introduction-to-augur">the Nextstrain documentation</a>.
             {` The JSON schema for datasets is defined `}
             <a href="https://github.com/nextstrain/augur/blob/master/augur/data/schema-export-v2.json">here</a>.
             {` For more information about the software which powers these visualisations please see `}
             <a href="https://nextstrain.github.io/auspice/">the Nextstrain/Auspice documentation</a>.
-            {` Please `}
-            <a href="https://github.com/nextstrain/auspice.us/issues/new/choose">make an issue</a>
-            {` for any bugs, comments or questions. Thanks!`}
           </P>
 
           <Line/>
 
-          <P>{`auspice.us v${version} is built by `}<a href="https://twitter.com/hamesjadfield">james hadfield</a></P>
+          <P>{`altare v${version} is built by `}<a href="https://github.com/k-florek">kelsey florek</a></P>
+          <P>{"built using auspice developed by "}<a href="https://twitter.com/hamesjadfield">james hadfield</a></P>
           <NextstrainTitle/>
+          <StaphB/>
           <GitHub/>
         </CenterContent>
 

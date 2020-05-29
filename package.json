@@ -1,11 +1,12 @@
 {
-  "name": "auspice-desktop",
-  "version": "2.15.0",
-  "description": "Web app for visualizing pathogen evolution",
-  "author": "James Hadfield, Trevor Bedford and Richard Neher",
+  "name": "altare",
+  "version":"1.0.0",
+  "auspice-version": "2.15.0",
+  "description": "Desktop app for visualizing pathogen evolution",
+  "author": "Kelsey Florek",
   "license": "AGPL-3.0-only",
-  "repository": "github:nextstrain/auspice",
-  "homepage": "https://www.npmjs.com/package/auspice",
+  "repository": "github.com/k-florek/altare",
+  "homepage": "https://github.com/k-florek/altare",
   "engines": {
     "node": "10.8.x",
     "npm": "6.2.x"

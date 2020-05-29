@@ -14,7 +14,7 @@ auspice.run(args);
 let mainWindow = null
 
 function main() {
-  mainWindow = new BrowserWindow()
+  mainWindow = new BrowserWindow({ width: 1024, height: 800, show: true })
   mainWindow.loadURL(`http://localhost:4000/`)
   mainWindow.on('close', event => {
     mainWindow = null
