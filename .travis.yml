@@ -8,13 +8,7 @@ install:
 - npm install
 - pip install --user awscli
 script:
-- npm run build
-after_success:
-- if [[ "$TRAVIS_PULL_REQUEST" == "false" && "$TRAVIS_BRANCH" == "release" ]]; then
-    npm run rebuild-docker-image;
-    npm config set //registry.npmjs.org/:_authToken="$NPM_TOKEN";
-    npm publish;
-  fi
+- npm run build-electron
 notifications:
   email:
     on_success: never
