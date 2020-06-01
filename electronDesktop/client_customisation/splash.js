@@ -29,9 +29,9 @@ class SplashContent extends React.Component {
       <div className="static container">
 
         <CenterContent>
-          <Title>altare</Title>
+          <Title>Auspice</Title>
           <P>
-            {`altare allows interactive exploration of phylogenomic datasets using auspice by simply dragging & dropping them here.`}
+            {`Auspice allows interactive exploration of phylogenomic datasets. Simply drag & drop the datafile here.`}
           </P>
         </CenterContent>
 
@@ -44,7 +44,7 @@ class SplashContent extends React.Component {
 
         <CenterContent>
           <P>
-            {`altare is built from Nextstrain, an open-source project to harness the scientific and public health potential of pathogen genome data. `}
+            {`Auspice is built from Nextstrain, an open-source project to harness the scientific and public health potential of pathogen genome data. `}
             {`For more information about how to run the bioinformatics tools which this tool can visualise please see `}
             <a href="https://nextstrain.org/docs/bioinformatics/introduction-to-augur">the Nextstrain documentation</a>.
             {` The JSON schema for datasets is defined `}
@@ -56,7 +56,7 @@ class SplashContent extends React.Component {
           <Line/>
 
           <P>{`altare v${version} is built by `}<a href="https://github.com/k-florek">kelsey florek</a></P>
-          <P>{"built using auspice developed by "}<a href="https://twitter.com/hamesjadfield">james hadfield</a></P>
+          <P>{"auspice developed by "}<a href="https://twitter.com/hamesjadfield">james hadfield</a></P>
           <NextstrainTitle/>
           <StaphB/>
           <GitHub/>

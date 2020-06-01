@@ -26,7 +26,7 @@ const AuspiceNavBar = ({narrativeTitle, sidebar}) => {
   return (
     <NavBarContainer>
       <Title href="/">
-        {"altare"}
+        {"Auspice"}
       </Title>
     </NavBarContainer>
   );
